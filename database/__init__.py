@@ -1,1 +1,1 @@
-# Smart Product Finder - Módulo de Banco de Dados
+# Smart Product Finder - Banco de Dados

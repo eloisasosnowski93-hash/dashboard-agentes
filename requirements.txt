@@ -1,25 +1,5 @@
-# Smart Product Finder — Dependências
-# Instale com: pip install -r requirements.txt
-
-# Interface web
 streamlit>=1.32.0
-
-# Manipulação de dados
 pandas>=2.0.0
-
-# Export Excel (opcional — sem ele, export cai para CSV)
 openpyxl>=3.1.0
-
-# IA Anthropic (opcional — sem chave usa modo simulado)
 anthropic>=0.25.0
-
-# Scraping real (opcional — sem ele usa modo demo)
-# playwright>=1.42.0
-# Após instalar: playwright install chromium
-
-# Utilitários padrão (já incluídos no Python 3.8+)
-# sqlite3 — nativo
-# json — nativo
-# csv — nativo
-# pathlib — nativo
-# uuid — nativo
+# playwright>=1.42.0  # Para scraping real: pip install playwright && playwright install chromium

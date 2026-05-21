@@ -38,7 +38,6 @@ from pages import (
 except Exception as e:
 with st.sidebar:
 st.markdown("""
-st.markdown("""
 <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
@@ -51,8 +50,6 @@ st.markdown("""
     [data-testid="stMetricValue"] {font-size: 1.5rem; font-weight: 700;}
 </style>
 """, unsafe_allow_html=True)
-    st.divider()
-
     if "nav" not in st.session_state:
         st.session_state["nav"] = "🏠 Dashboard"
 

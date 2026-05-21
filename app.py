@@ -1,3 +1,8 @@
+import sys
+import os
+
+# Adiciona a raiz do projeto ao PATH do Python
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 """
 Smart Product Finder v2.1 — app.py
 Adicionado: Análise de Viabilidade Enterprise (tab nova)

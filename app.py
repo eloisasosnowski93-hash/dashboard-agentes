@@ -1,5 +1,6 @@
 import sys
 import os
+import streamlit as st
 
 # Adiciona a raiz do projeto ao PATH do Python
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -25,10 +26,17 @@ def init_db():
     db.initialize_database()
     return True
 init_db()
-
-from pages import dashboard, search_form, results, approved_products, stores, orders, viability
-
-st.markdown("""
+from pages import (
+        dashboard, 
+        search_form, 
+        results, 
+        approved_products, 
+        stores, 
+        orders, 
+        viability
+    )
+except Exception as e:
+    st.error(f"Erro ao carregar módulos: {e}")
 <style>
     #MainMenu{visibility:hidden}footer{visibility:hidden}header{visibility:hidden}
     .main .block-container{padding-top:1rem;padding-bottom:2rem;max-width:1200px}

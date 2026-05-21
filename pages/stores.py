@@ -2,8 +2,9 @@
 import streamlit as st
 import json
 from database import db
-from integrations.integrations import get_all_platforms, test_connection, sync_orders
-
+import sys
+    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+    from integrations.integrations import get_all_platforms, test_connection, sync_orders
 
 def render():
     st.header("🔗 Lojas & Integrações")

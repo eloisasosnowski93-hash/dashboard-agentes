@@ -26,7 +26,6 @@ def init_db():
     db.initialize_database()
     return True
 init_db()
-
     from pages import dashboard, search_form, results, approved_products, stores, orders, viability
 except Exception as e:
     st.error(f"Erro ao importar módulos: {e}")

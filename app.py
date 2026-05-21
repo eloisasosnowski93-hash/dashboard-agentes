@@ -36,21 +36,6 @@ from pages import (
         viability
     )
 except Exception as e:
-    st.error(f"Erro ao carregar módulos: {e}")
-<style>
-    #MainMenu{visibility:hidden}footer{visibility:hidden}header{visibility:hidden}
-    .main .block-container{padding-top:1rem;padding-bottom:2rem;max-width:1200px}
-    [data-testid="stMetricValue"]{font-size:1.5rem;font-weight:700;color:#FF6B35}
-    [data-testid="stMetricLabel"]{font-size:0.78rem;color:#666}
-    [data-testid="stSidebar"]{background:linear-gradient(180deg,#1a1a2e,#16213e)}
-    [data-testid="stSidebar"] *{color:#e8e8e8 !important}
-    .stButton>button[kind="primary"]{background:linear-gradient(135deg,#FF6B35,#F7931E);
-        border:none;color:white;font-weight:600;border-radius:8px;transition:all .2s}
-    .stButton>button[kind="primary"]:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,107,53,.4)}
-    [data-testid="stExpander"]{border:1px solid #e0e0e0;border-radius:8px;margin-bottom:.4rem}
-    .stProgress>div>div{background:linear-gradient(90deg,#FF6B35,#F7931E)}
-</style>""", unsafe_allow_html=True)
-
 with st.sidebar:
 st.markdown("""
 st.markdown("""

@@ -33,22 +33,21 @@ except Exception as e:
     st.error(f"Erro ao importar módulos: {e}")
 
 with st.sidebar:
-st.markdown("""
-<style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    .main .block-container {
-        padding-top: 1rem;
-        padding-bottom: 2rem;
-        max-width: 1200px;
-    }
-    [data-testid="stMetricValue"] {font-size: 1.5rem; font-weight: 700;}
-</style>
-""", unsafe_allow_html=True)
+    st.markdown("""
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        .main .block-container {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            max-width: 1200px;
+        }
+        [data-testid="stMetricValue"] {font-size: 1.5rem; font-weight: 700;}
+    </style>
+    """, unsafe_allow_html=True)
     if "nav" not in st.session_state:
         st.session_state["nav"] = "🏠 Dashboard"
-
     nav_options = [
         "🏠 Dashboard",
         "📐 Viabilidade",

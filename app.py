@@ -52,12 +52,18 @@ except Exception as e:
 </style>""", unsafe_allow_html=True)
 
 with st.sidebar:
-    st.markdown("""
-    <div style='text-align:center;padding:1rem 0 .5rem'>
-        <div style='font-size:2rem'>🛒</div>
-        <div style='font-size:1rem;font-weight:700;color:#FF6B35'>Smart Product Finder</div>
-        <div style='font-size:.7rem;color:#aaa;margin-top:.2rem'>v2.1 · MEI + Shopee Intelligence</div>
-    </div>""", unsafe_allow_html=True)
+st.markdown("""
+<style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .main .block-container {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        max-width: 1200px;
+    }
+</style>
+""", unsafe_allow_html=True)
     st.divider()
 
     if "nav" not in st.session_state:
